@@ -11,4 +11,4 @@ list=[]
 for i in range(number):
     list[i] = int(input())
 
-InsertionSort(list)
+InsertionSort.insertion(list)
