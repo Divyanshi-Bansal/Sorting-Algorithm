@@ -1,15 +1,12 @@
 import InsertionSort
 
-def __init__main(self,number,list):
-    self.number = number
-    self.list = list
+if __name__ == "__main__":
+    print("how long you want your list is ?")
+    number = int(input())
 
-print("how long yo want your list is ?")
-number = int(input())
+    print("enter numbers...")
+    list=[]
+    for i in range(number):
+        list[i] = input()
 
-print("enter numbers...")
-list=[]
-for i in range(number):
-    list[i] = input()
-
-InsertionSort.insertion(list)
+    InsertionSort.insertion(list)
