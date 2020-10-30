@@ -1,6 +1,10 @@
 import main
 
 class insertionSort:
+
+    def __init__(self,list):
+        self.list = list
+
     def insertion(list):
         for i in range(1,len(list)):
             j=i-1
