@@ -2,7 +2,9 @@ import InsertionSort
 
 if __name__ == "__main__":
     n = int(input("enter length"))
-    list=[]
+    list=list()
     for i in range(n):
-        list[i] = int(input())
+        m = int(input("enter number "))
+        list.append(m)
 
+    InsertionSort.insertionSort.insertion(list)
