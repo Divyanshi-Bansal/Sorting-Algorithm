@@ -1,19 +1,10 @@
 
 class fractionalKnapSack:
 
-    def __init__(self,wt,val,ind):
-        self.wt = wt;
-        self.val = val
-        self.ind = ind
-        self.cost = val//wt
-
-    def __lt__(self, other):
-        return self.cost <other.cost
-
     def getMaxValue(self,wt,val,capacity):
         ival=[]
         for i in range(len(wt)):
-            ival.append(wt[i],val[i],i)
+            ival.append(ItemValue(wt[i],val[i],i))
 
         ival.sort(reverse=True)
         totalValue = 0
@@ -29,3 +20,14 @@ class fractionalKnapSack:
                 capacity = int(capacity -(curWt * fraction))
                 break
         return totalValue
+
+class ItemValue:
+
+    def __init__(self,wt,val,ind):
+        self.wt = wt;
+        self.val = val
+        self.ind = ind
+        self.cost = val//wt
+
+    def __lt__(self, other):
+        return self.cost <other.cost
