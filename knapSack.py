@@ -1,7 +1,7 @@
 
 class fractionalKnapSack:
 
-    def getMaxValue(self,wt,val,capacity):
+    def getMaxValue(wt,val,capacity):
         ival=[]
         for i in range(len(wt)):
             ival.append(ItemValue(wt[i],val[i],i))

@@ -15,4 +15,4 @@ if __name__ == "__main__":
     capacity = int(input())
 
     maxValue = knapSack.fractionalKnapSack.getMaxValue(weight,value,capacity)
-    print("Maximum value of knapSack is "+maxValue)
+    print("Maximum value of knapSack is ",maxValue)
