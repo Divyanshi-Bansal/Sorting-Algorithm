@@ -15,5 +15,3 @@ class insertionSort:
             list[j+1] = key
         for ele in list:
             print(ele,end=" ")
-
-
